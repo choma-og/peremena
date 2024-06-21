@@ -1,0 +1,61 @@
+<section class="section contacts" id="contacts">
+  <div class="contacts__container">
+    <div class="section-box col-12 row">
+      <span class="section-label contacts-label  col-2">Связаться с нами</span>
+      <h2 class="section-title contacts-title col-8"><span class="left-1">Г0товы</span> <span class="left-1-5">к&nbsp;перемЕнам?</span></h2>
+      {{!-- <div class="col-2"></div> --}}
+    </div>
+    <div class="contacts__box col-12 row">
+      <div class="col-7 contacts__info">
+        <ul class="contacts__list">
+          <li class="contacts__item">
+            <span>пн&mdash;пт: с&nbsp;9&nbsp;до&nbsp;18</span>
+            <a href="">+7 800 000 00 00</a>
+          </li>
+          <li class="contacts__item">
+            <span>По&nbsp;вопросам покупки квартир</span>
+            <a href="">sales@peremena.ru</a>
+          </li>
+          <li class="contacts__item">
+            <span>Офис продаж</span>
+            <a href="">Барнаул, ул. Кленова 11а, оф.&nbsp;1111</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-5 contacts-form">
+        <form action="/local/ajax/join.php" method="post" class="contacts__form form-contacts js-form">
+          <div class="contacts__wrapper col-12 row">
+  
+            <div class="contacts__input col-12 row wrapper__name ">
+              <label class="contacts__label col-4" for="">Ваше имя</label>
+              <div class="contacts__help">
+                <input name="user_name " class="contacts__name col-8" type="text" id="contacts-name" data-type="text" placeholder=" ">
+                <div class="validate__form-error validate__form-error--name js-error js-error-name">
+                  <span>Ой-ой, перепроверьте корректность имени</span>
+                </div>
+              </div>
+            </div>
+  
+            <div class="contacts__input col-12 row wrapper__phone ">
+              <label class="contacts__label col-4" for="">Номер телефона</label>
+              <div class="contacts__help">
+                <input data-mask="phone" name="user_phone" class="contacts__tel col-8" data-type="phone" type="text" id="contacts-phone" inputmode="text" placeholder=" ">
+                <div class="validate__form-error validate__form-error--phone js-error js-error-phone ">
+                  <span>Ой-ой, перепроверьте корректность номера</span>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+          <div class="contacts__btn col-12 row">
+            <div class="col-4"></div>
+            <div class="col-8 contacts__btn-info">
+              <button class="js-form-submit btn-reset btn btn-contacts">Заказать звонок</button>
+              <p class="">Нажимая на&nbsp;кнопку, вы&nbsp;даете согласие на&nbsp;обработку персональных данных</p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

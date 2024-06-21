@@ -1,0 +1,192 @@
+.hero {
+  position: relative;
+  background-color: var(--color-accent);
+  @media (max-width:800px) {
+    background-image: url("/public/img/hero/hero-1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  &__container {
+    @media (max-width:650px) {
+      flex-direction: column;
+    }
+    // padding-top: 100px;
+    // padding-bottom: 80px;
+  }
+  &__descr {
+    padding-bottom: 80px;
+    @media (max-width:1200px) {
+      width: 50%;
+    }
+    @media (max-width:650px) {
+      width: 100%;
+      margin-bottom: 52px;
+    }
+  }
+  &__subtitle {
+    // max-width: 330px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 130%;
+    color: var(--color-linen);
+    max-width: 460px;
+    @media (max-width:1200px) {
+      font-size: 18px;
+      max-width: 340px;
+    }
+    @media (max-width:650px) {
+      font-size: 16px;
+    }
+  }
+  &__title {
+    padding-top: 220px;
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 130%;
+    font-family: "Morpha";
+    color: var(--color-linen);
+    max-width: 490px;
+    margin-bottom: 28px;
+    @media (max-width:1200px) {
+      font-size: 52px;
+    }
+    @media (max-width:650px) {
+      font-size: 48px;
+    }
+    // display: inline-block;
+    // font-variant-ligatures: no-common-ligatures;
+  }
+  &__info {
+    position: relative;
+    background-image: url("/public/img/hero/hero-1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    
+    margin-right: calc(50% - 50vw);
+    flex-grow: 1;
+    @media (max-width:1200px) {
+      width: 50%;
+    }
+    @media (max-width:800px) {
+      background-image: none;
+    }
+    @media (max-width:650px) {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+  }
+}
+.quantity-hero {
+  padding-top: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 24px;
+  @media (max-width:650px) {
+    padding-top: 0px;
+    background-color: var(--color-accent);
+    border-radius: 10px;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  &__text {
+    display: none;
+    color: rgba(251, 239, 233, 1);
+    font-size: 16px;
+    @media (max-width:650px) {
+      display: block;
+    }
+  }
+  &__box {
+    display: inline-block;
+    @media (max-width:1200px) {
+      svg {
+        width: 100px;
+        height: 120px;
+      }
+    }
+    @media (max-width:650px) {
+      display: none;
+    }
+  }
+  &__descr {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--color-linen);
+    max-width: 80px;
+    text-align: center;
+    @media (max-width:1200px) {
+      font-size: 13px;
+    }
+    @media (max-width:650px) {
+      display: none;
+    }
+    &-mobile {
+      font-size: 16px;
+      color: rgba(251, 239, 233, 1);
+      display: none;
+      @media (max-width:650px) {
+        display: inline-block;
+      }
+    }
+  }
+  &__info {
+    background-color: var(--color-accent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 162px;
+    height: 152px;
+    border-radius: 70px;
+    gap: 8px;
+    @media (max-width:1200px) {
+      width: 100px;
+      height: 90px;
+      border-radius: 50%;
+      gap: 2px;
+    }
+    @media (max-width:650px) {
+      width: 100%;
+      border-radius: 10px;
+      background-color: transparent;
+      border-radius: 0px;
+      height: auto;
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      width: auto;
+      padding: 12px 40px;
+      border-radius: 10px;
+      border: 1.5px solid rgba(251, 239, 233, 1);
+    }
+  }
+  &__value {
+    font-weight: 400;
+    color: var(--color-linen);
+    font-size: 42px;
+    @media (max-width:1200px) {
+      font-size: 28px;
+    }
+    @media (max-width:650px) {
+      font-size: 16px;
+    }
+
+  }
+  &__container {
+    max-width: 775px;
+    margin-left: 0;
+    @media (max-width:650px) {
+      max-width: none;
+      padding: 15px 12px;
+      justify-content: space-around;
+      gap: 20px;
+    }
+  }
+}

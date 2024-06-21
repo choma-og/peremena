@@ -1,0 +1,68 @@
+.section {
+}
+.conditions {
+		&__container {
+
+    }
+		&__list {
+      display: grid;
+      gap: 36px;
+      grid-template-columns: repeat(3, 1fr);
+      @media (max-width:1200px) {
+        gap: 20px;
+      }
+      @media (max-width:1080px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @media (max-width:650px) {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 14px;
+      }
+    }
+		&__item {
+
+    }
+		&__link {
+      padding: 32px 42px;
+      background-color: white;
+      border-radius: 10px;
+      display: flex;
+      gap: 52px;
+      flex-direction: column;
+      @media (max-width:967px) {
+        padding: 20px 24px;
+        gap: 38px;
+      }
+    }
+		&__box {
+
+    }
+    &__stavka {
+      
+    }
+		&__summ {
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 130%;
+      color: var(--color-accent);
+      margin-right: 24px;
+      @media (max-width:650px) {
+        font-size: 20px;
+        margin-bottom: 7px;
+        display: inline-block
+      }
+    }
+		&__time {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 130%;
+      color: var(--color-opium);
+      margin-right: 10px;
+    }
+		&__percent {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 130%;
+      color: var(--color-opium);
+    }
+}

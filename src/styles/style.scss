@@ -1,0 +1,25 @@
+// базовые подключения
+@import "./settings";
+@import "./mixins";
+@import "./fonts";
+@import "./vars";
+
+// компоненты страницы
+
+// подключения компонентов страницы (большие компоненты)
+@import "./components/header";
+@import "./components/hero";
+@import "./components/about";
+@import "./components/gallery";
+@import "./components/conditions";
+@import "./components/contacts";
+@import "./components/progress";
+@import "./components/news";
+@import "./components/map";
+@import "./components/apartments";
+@import "./components/footer";
+
+// подключения компонентов страницы (маленькие компоненты)
+@import "./components/modal-main";
+@import "./components/modal-gallery";
+@import "./components/news-detail";
